@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    outline: none;
+}
+
+body {
+    background: #0f0f0f;
+    color: #e5e5e5;
+    padding: 40px 15px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* زر الأعضاء */
+.members-btn, .icon-btn {
+    background: #1c1c1c;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    transition: 0.3s;
+}
+
+.members-btn:hover, .icon-btn:hover {
+    background: #2a2a2a;
+}
+
+.members-btn span {
+    width: 20px;
+    height: 2px;
+    background: #ccc;
+    border-radius: 5px;
+}
+
+.members-btn small, .icon-btn small {
+    font-size: 10px;
+    opacity: 0.6;
+}
+
+/* زر الرسائل - أيقونة */
+.icon-btn {
+    font-size: 16px;
+}
+
+/* Layout */
+.layout {
+    display: flex;
+    gap: 30px;
+}
+
+/* القوانين */
+.rules {
+    flex: 1;
+}
+
+.rules h2 {
+    margin-bottom: 15px;
+    opacity: 0.7;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 14px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background: #252525;
+}
+
+.danger {
+    color: #ff3b3b;
+    font-weight: bold;
+}
+
+.promotion-title {
+    margin: 20px 0 10px;
+    font-size: 14px;
+    opacity: 0.6;
+    letter-spacing: 1px;
+}
+
+.promotion {
+    border-left: 3px solid #444;
+}
+
+/* الأعضاء */
+.members {
+    flex: 1;
+    max-width: 0;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+
+.members.active {
+    max-width: 500px;
+}
+
+.counter {
+    margin-bottom: 15px;
+    opacity: 0.6;
+    font-weight: bold;
+}
+
+.member {
+    background: #181818;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.member:hover {
+    background: #242424;
+}
+
+.role {
+    opacity: 0.6;
+}
+
+/* المودالات */
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    z-index: 1000;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-box {
+    background: #181818;
+    padding: 25px;
+    border-radius: 18px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.modal-box.small {
+    text-align: center;
+}
+
+.modal-box input,
+.modal-box textarea {
+    background: #101010;
+    border: 1px solid #2a2a2a;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.modal-box button {
+    background: #2a2a2a;
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.modal-box button:hover {
+    background: #3a3a3a;
+}
+
+/* موبايل */
+@media (max-width: 768px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    .members {
+        max-width: 100%;
+        max-height: 0;
+    }
+
+    .members.active {
+        max-height: 800px;
+    }
+}
+
+/* منع تحديد النص */
+::selection {
+    background: transparent;
+}
