@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>💖</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- أيقونة الموقع -->
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="icon.png">
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- صفحة البداية -->
+  <div class="start-screen" id="startScreen">
+    <img src="q4.gif" class="start-gif">
+    <div class="start-text">دي ثوية اثألة بثيتة بث</div>
+    <button id="startBtn">ابدئي</button>
+  </div>
+
+  <!-- شاشة الأسئلة -->
+  <div class="quiz-screen" id="quizScreen" style="display:none">
+    <div class="gif-box" id="gifBox">
+      <img src="q1.gif" id="mainImage">
+    </div>
+    <div class="question" id="question"></div>
+    <div class="buttons" id="buttons">
+      <button id="btn1"></button>
+      <button id="btn2"></button>
+    </div>
+  </div>
+
+  <!-- شاشة الغلط -->
+  <div class="wrong-screen" id="wrongScreen">
+    <img src="" class="wrong-gif" id="wrongGif">
+    <div class="wrong-message" id="wrongMessage"></div>
+    <div class="wrong-buttons">
+      <button id="goGoogle">اخرجي يلا</button>
+      <button id="goBack">ارجعي وعيدي يحيوانة</button>
+    </div>
+  </div>
+
+  <!-- موديل الأغنية المفضلة -->
+  <div class="song-modal" id="songModal">
+    <div class="song-title">أنشودتي المفضلة 💖</div>
+    <img src="song.gif" class="song-gif">
+    <audio id="songAudio" src="Hasbi Rabbi _ Ayisha Abdul Basith [Official Video](MP3_160K).mp3"></audio>
+    <div class="progress-bar">
+      <div class="progress" id="progress"></div>
+    </div>
+    <div class="timer" id="timer">0:00</div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

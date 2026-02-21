@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap');
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #ffffff 0%, #ffe6f2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  direction: rtl;
+  font-family: 'Baloo 2', cursive;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+}
+
+/* صفحة البداية */
+.start-gif {
+  width: 320px;
+  border-radius: 25px;
+  border: 6px solid #b266ff;
+  box-shadow: 0 0 25px rgba(178,102,255,0.6);
+}
+.start-text {
+  margin: 20px 0;
+  font-size: 28px;
+  color: #ff4da6;
+}
+#startBtn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  background: #ff69b4;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+#startBtn:hover { transform: scale(1.05); }
+
+/* شاشة الأسئلة */
+.gif-box img { width: 380px; border-radius: 25px; border: 6px solid #b266ff; box-shadow: 0 0 25px rgba(178,102,255,0.6); }
+.question { margin-top: 25px; font-size: 34px; color: #ff4da6; }
+.buttons { margin-top: 30px; display: flex; flex-direction: column; align-items: center; }
+button { width: 260px; padding: 15px; margin: 10px 0; border: none; border-radius: 30px; font-size: 18px; cursor: pointer; background: #ffb3d9; color: white; transition: 0.2s; }
+button:hover { transform: scale(1.05); }
+
+/* شاشة الغلط */
+.wrong-screen { display: none; text-align: center; }
+.wrong-gif { width: 300px; border-radius: 20px; border: 6px solid #ff66cc; margin-bottom: 20px; }
+.wrong-message { font-size: 26px; color: #ff4da6; margin-bottom: 20px; padding: 0 20px; }
+.wrong-buttons { display: flex; flex-direction: column; align-items: center; }
+.wrong-buttons button { width: 240px; margin: 8px 0; }
+
+/* موديل الأغنية */
+.song-modal {
+  display: none; text-align: center; background: #ffe6f2; border: 6px solid #ff69b4; border-radius: 20px; padding: 25px; width: 340px; margin: auto;
+}
+.song-title { font-size: 28px; color: #ff4da6; margin-bottom: 15px; }
+.song-gif { width: 250px; border-radius: 20px; border: 5px solid #ff69b4; margin-bottom: 15px; }
+.progress-bar { width: 100%; height: 20px; background: #ffb3d9; border-radius: 10px; overflow: hidden; margin-bottom: 10px; }
+.progress { height: 100%; width: 0%; background: #ff4da6; }
+.timer { font-size: 20px; color: #ff4da6; font-family: monospace; }
